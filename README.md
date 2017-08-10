@@ -24,4 +24,5 @@ PC端网页应对在不同分辨率电脑、浏览器不是处于全屏情况下
     其次，主体内容应该保证均在中心1200px范围，当用户缩小屏幕时采用写死方案来避免内容大小发生改变，删减左右的不重要部分。
 
 天猫等网站采用的是写死+背景颜色解决。最终效果就是无论多大的屏幕，放大超过主体内容后都采用背景色填充，缩小情况最小宽度要保证不会覆盖主体内容。
-如当前天猫首页banner截图是这样![天猫首页banner成果图](
+如当前天猫首页banner截图是这样![天猫首页banner成果图](https://github.com/shaoxi2093/css-demos/blob/master/assets/readmeImgs/20170810140002.png)
+而实际的素材图片是这样![天猫首页banner素材图](https://github.com/shaoxi2093/css-demos/blob/master/assets/readmeImgs/20170810140123.png)
