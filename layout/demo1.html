@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自适应布局</title>
+    <style>
+        html,body {
+            min-width: 1280px;
+        }
+        .head-wrapper {
+            width: 100%;
+            position: relative;
+        }
+        .head-wrapper-bg {
+            background:url("../assets/images/layout/layout-demo1-001.jpg") no-repeat center;
+            background-size: cover;
+            height: 735px;
+        }
+        .cutline {
+            margin: 20px 10%;
+            text-align: center;
+            width: 80%;
+        }
+        .banner-intr {
+            position: absolute;
+            top:10px;
+            left: 0;right: 0;
+            margin: 0 auto;
+            font-size: 20px;
+            color: #fff;
+        }
+        .banner-content {
+            position: absolute;
+            top:50%;
+            left: 20%;
+            color: #00B7FF;
+            width: 500px;
+            font-size: 22px;
+        }
+        .cutline:before,.cutline:after {
+            content: "————————————————";
+        }
+
+        .head-wrapper-banner {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="head-wrapper">
+    <img src="../assets/images/layout/layout-demo1-001.jpg" class="head-wrapper-banner">
+    <p class="banner-intr">我是等比缩放banner</p>
+    <p class="banner-content">我是banner上的文字内容，我的位置随机，我可能很长，可能需要分行来展示，但我的位置处于可视范围内。<br>2.我是banner上的文字内容，我的位置随机，我可能很长，可能需要分行来展示。3.我是banner上的文字内容，我的位置随机，我可能很长，可能需要分行来展示。</p>
+</div>
+
+<div class="cutline">华丽的分割线</div>
+<div class="head-wrapper head-wrapper-bg">
+    <p class="banner-intr">我是背景图banner</p>
+    <p class="banner-content">我是banner上的文字内容，我的位置随机，我可能很长，可能需要分行来展示，但我的位置处于可视范围内。<br>2.我是banner上的文字内容，我的位置随机，我可能很长，可能需要分行来展示。3.我是banner上的文字内容，我的位置随机，我可能很长，可能需要分行来展示。</p>
+</div>
+
+</body>
+</html>
