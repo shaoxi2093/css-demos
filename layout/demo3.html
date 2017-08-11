@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>满屏轮播自适应</title>
+    <style>
+        html,body {
+            width: 100%;height: 100%;margin: 0;padding: 0;
+        }
+        .banner-wrapper {
+            width: 100%;
+            position: relative;
+        }
+        .banner-img {
+            background: url("../assets/images/layout/demo3-001.jpg") no-repeat center center;
+            background-size: cover;
+            height: 1040px;
+        }
+    </style>
+</head>
+<body>
+<div class="banner-wrapper">
+    <div class="banner-img"></div>
+</div>
+<script>
+    window.onload = function () {
+        function initBannerSize() {
+            var curHeight = document.body.clientHeight;
+            document.querySelector(".banner-img").style.height = curHeight + "px";
+        }
+        window.onresize = initBannerSize;
+        initBannerSize();
+    }
+</script>
+</body>
+</html>
