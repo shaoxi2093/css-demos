@@ -21,7 +21,6 @@
 
         function update() {
             var counter = 0;
-
             elements.each(function() {
                 var $this = $(this);
                 if (!$.belowthefold(this, settings)) {
@@ -49,7 +48,6 @@
             $.extend(settings, options);
         }
 
-
         $container = (settings.container === undefined ||
         settings.container === window) ? $window : $(settings.container);
 
@@ -58,7 +56,6 @@
                 update();
             });
         }
-
         this.each(function() {
             var self = this;
             var $self = $(self);
@@ -68,22 +65,18 @@
             $self.one("appear", function(){
                 cb($self)
             });
-
         });
-
         return this;
     };
 
 
     $.belowthefold = function(element, settings) {
         var fold;
-
         if (settings.container === undefined || settings.container === window) {
             fold = (window.innerHeight ? window.innerHeight : $window.height()) + $window.scrollTop();
         } else {
             fold = $(settings.container).offset().top + $(settings.container).height();
         }
-
         return fold <= $(element).offset().top - settings.threshold;
     };
 

@@ -1,0 +1,59 @@
+.top-horicenter {
+    margin: 20px auto;
+    width: 1200px;
+}
+/*绝对定位  定宽  上下端水平居中*/
+.top-horicenter-abs1 {
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+}
+/*绝对定位  不定宽  上下端水平居中*/
+.top-horicenter-abs2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+/*绝对定位 水平居中通用*/
+.top-horicenter-abs {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+
+
+/*使用table-cell  垂直居中*/
+.left-verticenter1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+/*相对定位  定宽  左右垂直居中*/
+.left-verticenter2 {
+    margin: auto 0 auto 100px;
+    height: 60px;
+}
+/*绝对定位  定宽  左右垂直居中 偏移*/
+.left-verticenter-abs1 {
+    position: absolute;
+    height: 60px;
+    top:50%;
+    margin-top: -30px;
+}
+/*绝对定位  定宽、不定宽通用  左右垂直居中 transform（css3才有）*/
+.left-verticenter-abs2 {
+    position: absolute;
+    height: 60px;
+    top:50%;
+    transform: translate(0,-50%);
+}
+/*绝对定位  定宽、不定宽  垂直居中通用*/
+.left-verticenter-abs {
+    position: absolute;
+    margin: auto 0;
+    top:0;
+    bottom: 0;
+}
